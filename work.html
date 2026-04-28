@@ -1,93 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Work — Ethan Hershey</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Work — Ethan Hershey</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav>
+            <span class="nav-logo">ethan.hershey</span>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="work.html" class="active">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-<nav>
-  <span class="nav-logo">ethan.hershey</span>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="work.html" class="active">Work</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+        <div class="page-hero">
+            <p class="hero-tag">Work</p>
+            <h1>Projects &amp; Writing</h1>
+        </div>
 
-<div class="page-hero">
-  <p class="hero-tag">Work</p>
-  <h1>Projects &amp; Writing</h1>
-</div>
+        <section class="section">
+            <p class="section-label">Coding Projects</p>
+            <h2>Personal Projects</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <p class="card-tag">Rust · React · AWS</p>
+                    <h3>Full-Stack Personal Website</h3>
+                    <p>
+                        Axum backend and React frontend on AWS EC2 with a CI/CD
+                        pipeline for automated deployment on push.
+                    </p>
+                </div>
 
-<section class="section">
-  <p class="section-label">Coding Projects</p>
-  <h2>Personal Projects</h2>
-  <div class="card-grid">
+                <div class="card">
+                    <p class="card-tag">Python · NLP · Distributed</p>
+                    <h3>AI Movie Rating System</h3>
+                    <p>
+                        HackPSU project with a team of 4. Custom NLP model, 85%
+                        accuracy, sub-200ms response time across multiple
+                        servers.
+                    </p>
+                </div>
 
-    <div class="card">
-      <p class="card-tag">Rust · React · AWS</p>
-      <h3>Full-Stack Personal Website</h3>
-      <p>Axum backend and React frontend on AWS EC2 with a CI/CD pipeline for automated deployment on push.</p>
-    </div>
+                <div class="card">
+                    <p class="card-tag">Rust · Bevy</p>
+                    <h3>2D Platformer</h3>
+                    <p>
+                        Ongoing project. Custom physics engine and procedural
+                        level generation built from scratch.
+                    </p>
+                </div>
 
-    <div class="card">
-      <p class="card-tag">Python · NLP · Distributed</p>
-      <h3>AI Movie Rating System</h3>
-      <p>HackPSU project with a team of 4. Custom NLP model, 85% accuracy, sub-200ms response time across multiple servers.</p>
-    </div>
+                <div class="card">
+                    <p class="card-tag">Raspberry Pi · Python</p>
+                    <h3>Smart Rain Water System</h3>
+                    <p>
+                        1st Place, North Museum Science Fair. Sensor network
+                        that reduces water waste using weather API data and
+                        predictive modeling.
+                    </p>
+                </div>
 
-    <div class="card">
-      <p class="card-tag">Rust · Bevy</p>
-      <h3>2D Platformer</h3>
-      <p>Ongoing project. Custom physics engine and procedural level generation built from scratch.</p>
-    </div>
+                <div class="card">
+                    <p class="card-tag">HTML · CSS</p>
+                    <h3>GNU Website Redesign</h3>
+                    <p>
+                        Front-end redesign of the GNU Project website.
+                        Modernized layout and navigation while keeping the
+                        original content.
+                    </p>
+                    <a
+                        href="https://ethandhershey.github.io/gnu-website-redesign/"
+                        class="card-link"
+                        target="_blank"
+                        >View live site &rarr;</a
+                    >
+                </div>
+            </div>
+        </section>
 
-    <div class="card">
-      <p class="card-tag">Raspberry Pi · Python</p>
-      <h3>Smart Rain Water System</h3>
-      <p>1st Place, North Museum Science Fair. Sensor network that reduces water waste using weather API data and predictive modeling.</p>
-    </div>
+        <section class="section">
+            <p class="section-label">Writing Samples</p>
+            <h2>Technical Writing — ENGL 202C</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <p class="card-tag">Product Description</p>
+                    <h3>An Overview of the Mechanical Keyboard</h3>
+                    <p>
+                        A product description written for a general audience
+                        covering the case, switches, keycaps, connectivity, and
+                        form factors.
+                    </p>
+                    <a
+                        href="mechanical_keyboard.pdf"
+                        class="card-link"
+                        target="_blank"
+                        >View PDF &rarr;</a
+                    >
+                </div>
 
-    <div class="card">
-      <p class="card-tag">HTML · CSS</p>
-      <h3>GNU Website Redesign</h3>
-      <p>Front-end redesign of the GNU Project website. Modernized layout and navigation while keeping the original content.</p>
-      <a href="https://ethandhershey.github.io/gnu-website-redesign/" class="card-link" target="_blank">View live site &rarr;</a>
-    </div>
+                <div class="card">
+                    <p class="card-tag">Instruction Set</p>
+                    <h3>How to Tie a Bowline Knot</h3>
+                    <p>
+                        A step-by-step instruction set for beginners with
+                        caution notices, a glossary, and a troubleshooting
+                        guide.
+                    </p>
+                    <a
+                        href="bowline_instructions.pdf"
+                        class="card-link"
+                        target="_blank"
+                        >View PDF &rarr;</a
+                    >
+                </div>
+            </div>
+        </section>
 
-  </div>
-</section>
-
-<section class="section">
-  <p class="section-label">Writing Samples</p>
-  <h2>Technical Writing — ENGL 202C</h2>
-  <div class="card-grid">
-
-    <div class="card">
-      <p class="card-tag">Product Description</p>
-      <h3>An Overview of the Mechanical Keyboard</h3>
-      <p>A product description written for a general audience covering the case, switches, keycaps, connectivity, and form factors.</p>
-      <a href="mechanical_keyboard.pdf" class="card-link" target="_blank">View PDF &rarr;</a>
-    </div>
-
-    <div class="card">
-      <p class="card-tag">Instruction Set</p>
-      <h3>How to Tie a Bowline Knot</h3>
-      <p>A step-by-step instruction set for beginners with caution notices, a glossary, and a troubleshooting guide.</p>
-      <a href="bowline_instructions.pdf" class="card-link" target="_blank">View PDF &rarr;</a>
-    </div>
-
-  </div>
-</section>
-
-<footer>
-  &copy; 2026 Ethan Hershey &nbsp;·&nbsp; ethan.d.hershey@gmail.com
-</footer>
-
-</body>
+        <footer>
+            &copy; 2026 Ethan Hershey &nbsp;·&nbsp; ethan.d.hershey@gmail.com
+        </footer>
+    </body>
 </html>

@@ -1,168 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resume — Ethan Hershey</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Resume — Ethan Hershey</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav>
+            <span class="nav-logo">ethan.hershey</span>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-<nav>
-  <span class="nav-logo">ethan.hershey</span>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="resume.html" class="active">Resume</a></li>
-    <li><a href="work.html">Work</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+        <div class="page-hero">
+            <p class="hero-tag">Resume</p>
+            <h1>Ethan Daniel Hershey</h1>
+            <p>
+                Lancaster, PA &nbsp;·&nbsp; ethan.d.hershey@gmail.com
+                &nbsp;·&nbsp; 717-869-2483
+            </p>
+            <div style="margin-top: 1.5rem">
+                <a
+                    href="Ethan_Hershey_Resume.pdf"
+                    class="btn btn-primary"
+                    download
+                    >Download PDF</a
+                >
+            </div>
+        </div>
 
-<div class="page-hero">
-  <p class="hero-tag">Resume</p>
-  <h1>Ethan Daniel Hershey</h1>
-  <p>Lancaster, PA &nbsp;·&nbsp; ethan.d.hershey@gmail.com &nbsp;·&nbsp; 717-869-2483</p>
-  <div style="margin-top:1.5rem;">
-    <a href="Ethan_Hershey_Resume.pdf" class="btn btn-primary" download>Download PDF</a>
-  </div>
-</div>
+        <section class="section">
+            <p class="section-label">Education</p>
+            <h2>Education</h2>
+            <div class="resume-block">
+                <h3>Penn State University — Main Campus</h3>
+                <p class="resume-meta">
+                    B.S. Computer Engineering &nbsp;·&nbsp; June 2022 – May 2026
+                    &nbsp;·&nbsp; State College, PA
+                </p>
+                <ul>
+                    <li>Minor: Mathematics (Science)</li>
+                    <li>
+                        Coursework: Data Structures/Algorithms, Computer
+                        Architecture, Operating Systems, Digital Logic,
+                        Networks, Signals/Systems, Distributed Systems, OOP
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-<section class="section">
-  <p class="section-label">Education</p>
-  <h2>Education</h2>
-  <div class="resume-block">
-    <h3>Penn State University — Main Campus</h3>
-    <p class="resume-meta">B.S. Computer Engineering &nbsp;·&nbsp; June 2022 – May 2026 &nbsp;·&nbsp; State College, PA</p>
-    <ul>
-      <li>Minor: Mathematics (Science)</li>
-      <li>Coursework: Data Structures/Algorithms, Computer Architecture, Operating Systems, Digital Logic, Networks, Signals/Systems, Distributed Systems, OOP</li>
-    </ul>
-  </div>
-</section>
+        <section class="section">
+            <p class="section-label">Technical Skills</p>
+            <h2>Technical Skills</h2>
 
-<section class="section">
-  <p class="section-label">Technical Skills</p>
-  <h2>Technical Skills</h2>
+            <div class="skill-group">
+                <h4>Programming Languages</h4>
+                <div class="tags">
+                    <span class="tag">Python</span><span class="tag">Rust</span
+                    ><span class="tag">Java</span> <span class="tag">C</span
+                    ><span class="tag">C++</span
+                    ><span class="tag">JavaScript</span>
+                    <span class="tag">TypeScript</span
+                    ><span class="tag">Go</span><span class="tag">Kotlin</span>
+                    <span class="tag">Swift</span
+                    ><span class="tag">HTML/CSS</span
+                    ><span class="tag">SQL</span><span class="tag">MATLAB</span>
+                </div>
+            </div>
 
-  <div class="skill-group">
-    <h4>Programming Languages</h4>
-    <div class="tags">
-      <span class="tag">Python</span><span class="tag">Rust</span><span class="tag">Java</span>
-      <span class="tag">C</span><span class="tag">C++</span><span class="tag">JavaScript</span>
-      <span class="tag">TypeScript</span><span class="tag">Go</span><span class="tag">Kotlin</span>
-      <span class="tag">Swift</span><span class="tag">HTML/CSS</span><span class="tag">SQL</span><span class="tag">MATLAB</span>
-    </div>
-  </div>
+            <div class="skill-group">
+                <h4>Web Development</h4>
+                <div class="tags">
+                    <span class="tag">React</span><span class="tag">Axum</span
+                    ><span class="tag">RESTful APIs</span>
+                    <span class="tag">Node.js</span
+                    ><span class="tag">Express</span
+                    ><span class="tag">GraphQL</span>
+                </div>
+            </div>
 
-  <div class="skill-group">
-    <h4>Web Development</h4>
-    <div class="tags">
-      <span class="tag">React</span><span class="tag">Axum</span><span class="tag">RESTful APIs</span>
-      <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">GraphQL</span>
-    </div>
-  </div>
+            <div class="skill-group">
+                <h4>Cloud &amp; DevOps</h4>
+                <div class="tags">
+                    <span class="tag">AWS (EC2, S3, Lambda)</span
+                    ><span class="tag">Git</span> <span class="tag">Docker</span
+                    ><span class="tag">Kubernetes</span
+                    ><span class="tag">Linux</span>
+                </div>
+            </div>
 
-  <div class="skill-group">
-    <h4>Cloud &amp; DevOps</h4>
-    <div class="tags">
-      <span class="tag">AWS (EC2, S3, Lambda)</span><span class="tag">Git</span>
-      <span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Linux</span>
-    </div>
-  </div>
+            <div class="skill-group">
+                <h4>Machine Learning</h4>
+                <div class="tags">
+                    <span class="tag">TensorFlow</span
+                    ><span class="tag">PyTorch</span
+                    ><span class="tag">scikit-learn</span>
+                    <span class="tag">Keras</span><span class="tag">NLTK</span
+                    ><span class="tag">Hugging Face</span>
+                    <span class="tag">Neural Networks</span
+                    ><span class="tag">NLP</span>
+                </div>
+            </div>
 
-  <div class="skill-group">
-    <h4>Machine Learning</h4>
-    <div class="tags">
-      <span class="tag">TensorFlow</span><span class="tag">PyTorch</span><span class="tag">scikit-learn</span>
-      <span class="tag">Keras</span><span class="tag">NLTK</span><span class="tag">Hugging Face</span>
-      <span class="tag">Neural Networks</span><span class="tag">NLP</span>
-    </div>
-  </div>
+            <div class="skill-group">
+                <h4>Hardware &amp; Other</h4>
+                <div class="tags">
+                    <span class="tag">Raspberry Pi</span
+                    ><span class="tag">Arduino</span
+                    ><span class="tag">ESP32</span>
+                    <span class="tag">STM32</span
+                    ><span class="tag">Blender</span
+                    ><span class="tag">Unity</span>
+                </div>
+            </div>
+        </section>
 
-  <div class="skill-group">
-    <h4>Hardware &amp; Other</h4>
-    <div class="tags">
-      <span class="tag">Raspberry Pi</span><span class="tag">Arduino</span><span class="tag">ESP32</span>
-      <span class="tag">STM32</span><span class="tag">Blender</span><span class="tag">Unity</span>
-    </div>
-  </div>
-</section>
+        <section class="section">
+            <p class="section-label">Experience</p>
+            <h2>Work Experience</h2>
 
-<section class="section">
-  <p class="section-label">Experience</p>
-  <h2>Work Experience</h2>
+            <div class="resume-block">
+                <h3>Decision Sciences &amp; AI Intern</h3>
+                <p class="resume-meta">
+                    CMI Media Group &nbsp;·&nbsp; June 2025 – August 2025
+                    &nbsp;·&nbsp; Philadelphia, PA
+                </p>
+                <ul>
+                    <li>
+                        Developed statistical test/control group creation tool
+                        using t-tests, reducing processing from 16 hours to 15
+                        minutes (64x improvement)
+                    </li>
+                    <li>
+                        Analyzed 10TB+ of pharmaceutical health data using
+                        Python (pandas/polars) for clients including Eli Lilly
+                        and Company
+                    </li>
+                    <li>
+                        Built text-to-SQL AI system using LangChain that
+                        democratized PostgreSQL access for non-technical teams
+                        through natural language
+                    </li>
+                    <li>
+                        Delivered data-driven insights influencing multi-million
+                        dollar marketing budget allocations
+                    </li>
+                </ul>
+            </div>
 
-  <div class="resume-block">
-    <h3>Decision Sciences &amp; AI Intern</h3>
-    <p class="resume-meta">CMI Media Group &nbsp;·&nbsp; June 2025 – August 2025 &nbsp;·&nbsp; Philadelphia, PA</p>
-    <ul>
-      <li>Developed statistical test/control group creation tool using t-tests, reducing processing from 16 hours to 15 minutes (64x improvement)</li>
-      <li>Analyzed 10TB+ of pharmaceutical health data using Python (pandas/polars) for clients including Eli Lilly and Company</li>
-      <li>Built text-to-SQL AI system using LangChain that democratized PostgreSQL access for non-technical teams through natural language</li>
-      <li>Delivered data-driven insights influencing multi-million dollar marketing budget allocations</li>
-    </ul>
-  </div>
+            <div class="resume-block">
+                <h3>Teaching Assistant — Computer Science 131</h3>
+                <p class="resume-meta">
+                    Penn State University &nbsp;·&nbsp; 2022 – 2023
+                    &nbsp;·&nbsp; State College, PA
+                </p>
+                <ul>
+                    <li>
+                        Instructed 50+ students in object-oriented programming,
+                        data structures, and algorithm design
+                    </li>
+                    <li>
+                        Conducted code reviews and developed supplemental
+                        learning materials
+                    </li>
+                </ul>
+            </div>
 
-  <div class="resume-block">
-    <h3>Teaching Assistant — Computer Science 131</h3>
-    <p class="resume-meta">Penn State University &nbsp;·&nbsp; 2022 – 2023 &nbsp;·&nbsp; State College, PA</p>
-    <ul>
-      <li>Instructed 50+ students in object-oriented programming, data structures, and algorithm design</li>
-      <li>Conducted code reviews and developed supplemental learning materials</li>
-    </ul>
-  </div>
+            <div class="resume-block">
+                <h3>Pool Manager &amp; Lifeguard</h3>
+                <p class="resume-meta">
+                    Woodridge Swim Club &nbsp;·&nbsp; 2018 – 2023 &nbsp;·&nbsp;
+                    Lancaster, PA
+                </p>
+                <ul>
+                    <li>
+                        Managed operations and supervised 10+ lifeguards while
+                        implementing efficient scheduling system
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-  <div class="resume-block">
-    <h3>Pool Manager &amp; Lifeguard</h3>
-    <p class="resume-meta">Woodridge Swim Club &nbsp;·&nbsp; 2018 – 2023 &nbsp;·&nbsp; Lancaster, PA</p>
-    <ul>
-      <li>Managed operations and supervised 10+ lifeguards while implementing efficient scheduling system</li>
-    </ul>
-  </div>
-</section>
+        <section class="section">
+            <p class="section-label">Projects</p>
+            <h2>Projects &amp; Achievements</h2>
 
-<section class="section">
-  <p class="section-label">Projects</p>
-  <h2>Projects &amp; Achievements</h2>
+            <div class="resume-block">
+                <h3>Multi-Server AI Movie Rating System</h3>
+                <p class="resume-meta">
+                    HackPSU Hackathon &nbsp;·&nbsp; Fall 2023, Spring 2023, Fall
+                    2024
+                </p>
+                <ul>
+                    <li>
+                        Built distributed system achieving 85% accuracy
+                        predicting movie ratings from review sentiment with
+                        sub-200ms response time
+                    </li>
+                    <li>
+                        Collaborated with team of 4 to implement Python/GPU
+                        backend and React frontend in 24-hour hackathon
+                    </li>
+                </ul>
+            </div>
 
-  <div class="resume-block">
-    <h3>Multi-Server AI Movie Rating System</h3>
-    <p class="resume-meta">HackPSU Hackathon &nbsp;·&nbsp; Fall 2023, Spring 2023, Fall 2024</p>
-    <ul>
-      <li>Built distributed system achieving 85% accuracy predicting movie ratings from review sentiment with sub-200ms response time</li>
-      <li>Collaborated with team of 4 to implement Python/GPU backend and React frontend in 24-hour hackathon</li>
-    </ul>
-  </div>
+            <div class="resume-block">
+                <h3>Full-Stack Personal Website</h3>
+                <p class="resume-meta">2023 – Present</p>
+                <ul>
+                    <li>
+                        Deployed Axum (Rust) backend and React frontend on AWS
+                        EC2 with CI/CD pipeline for automated deployment
+                    </li>
+                </ul>
+            </div>
 
-  <div class="resume-block">
-    <h3>Full-Stack Personal Website</h3>
-    <p class="resume-meta">2023 – Present</p>
-    <ul>
-      <li>Deployed Axum (Rust) backend and React frontend on AWS EC2 with CI/CD pipeline for automated deployment</li>
-    </ul>
-  </div>
+            <div class="resume-block">
+                <h3>Video Game Development Portfolio</h3>
+                <p class="resume-meta">2022 – Present</p>
+                <ul>
+                    <li>
+                        Developed 2D platformer in Bevy (Rust) with custom
+                        physics engine and procedural level generation
+                    </li>
+                </ul>
+            </div>
 
-  <div class="resume-block">
-    <h3>Video Game Development Portfolio</h3>
-    <p class="resume-meta">2022 – Present</p>
-    <ul>
-      <li>Developed 2D platformer in Bevy (Rust) with custom physics engine and procedural level generation</li>
-    </ul>
-  </div>
+            <div class="resume-block">
+                <h3>Smart Rain Water Management System</h3>
+                <p class="resume-meta">2022</p>
+                <ul>
+                    <li>
+                        Won 1st Place at North Museum Science Fair for Raspberry
+                        Pi sensor network that reduced water waste using weather
+                        API integration and predictive modeling
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-  <div class="resume-block">
-    <h3>Smart Rain Water Management System</h3>
-    <p class="resume-meta">2022</p>
-    <ul>
-      <li>Won 1st Place at North Museum Science Fair for Raspberry Pi sensor network that reduced water waste using weather API integration and predictive modeling</li>
-    </ul>
-  </div>
-</section>
-
-<footer>
-  &copy; 2026 Ethan Hershey &nbsp;·&nbsp; ethan.d.hershey@gmail.com
-</footer>
-
-</body>
+        <footer>
+            &copy; 2026 Ethan Hershey &nbsp;·&nbsp; ethan.d.hershey@gmail.com
+        </footer>
+    </body>
 </html>
