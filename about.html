@@ -1,101 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>About — Ethan Hershey</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <nav>
-            <span class="nav-logo">ethan.hershey</span>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Ethan Hershey</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-        <div class="page-hero">
-            <p class="hero-tag">About Me</p>
-            <h1>Background &amp; Goals</h1>
+<nav>
+  <span class="nav-logo">ethan.hershey</span>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="writing.html">Writing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <p class="hero-tag">About Me</p>
+  <h1>Background &amp; Goals</h1>
+</div>
+
+<section class="section">
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I'm a Computer Engineering student at Penn State graduating in May 2026 with a minor in Mathematics. My work covers software systems, machine learning, and hardware.</p>
+      <p>Last summer I interned at CMI Media Group as a Decision Sciences and AI intern. I cut a 16-hour processing job down to 15 minutes and built a text-to-SQL tool that let non-technical teams query a PostgreSQL database in plain English.</p>
+      <p>Outside of work I build personal projects: a full-stack site in Rust, a 2D platformer with a custom physics engine, a GNU website redesign, and a Python tool for generating directory snapshots for LLM analysis. I also competed in HackPSU three times.</p>
+      <p>I'm looking for full-time roles in software engineering or applied ML after graduation, especially work that involves building useful tools.</p>
+    </div>
+
+    <div>
+      <div class="skill-group">
+        <h4>Education</h4>
+        <div class="card" style="margin-bottom:1rem;">
+          <h3>Penn State University</h3>
+          <p class="resume-meta" style="margin-bottom:.4rem;">B.S. Computer Engineering · May 2026</p>
+          <p style="font-size:.85rem;color:var(--muted);">Minor: Mathematics</p>
         </div>
+      </div>
 
-        <section class="section">
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>
-                        I'm a Computer Engineering student at Penn State
-                        graduating in May 2026 with a minor in Mathematics. My
-                        work covers software systems, machine learning, and
-                        hardware.
-                    </p>
-                    <p>
-                        Last summer I interned at CMI Media Group as a Decision
-                        Sciences and AI intern. I cut a 16-hour processing job
-                        down to 15 minutes and built a text-to-SQL tool that let
-                        non-technical teams query a PostgreSQL database in plain
-                        English.
-                    </p>
-                    <p>
-                        Outside of work I build personal projects — a full-stack
-                        site in Rust, a 2D platformer with a custom physics
-                        engine, and a GNU website redesign. I also competed in
-                        HackPSU three times.
-                    </p>
-                    <p>
-                        I'm looking for full-time roles in software engineering
-                        or applied ML after graduation, especially work that
-                        involves building useful tools.
-                    </p>
-                </div>
+      <div class="skill-group">
+        <h4>Interests</h4>
+        <div class="tags">
+          <span class="tag">Systems Programming</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Web Development</span>
+          <span class="tag">Game Development</span>
+          <span class="tag">Hardware / IoT</span>
+          <span class="tag">Open Source</span>
+        </div>
+      </div>
 
-                <div>
-                    <div class="skill-group">
-                        <h4>Education</h4>
-                        <div class="card" style="margin-bottom: 1rem">
-                            <h3>Penn State University</h3>
-                            <p
-                                class="resume-meta"
-                                style="margin-bottom: 0.4rem"
-                            >
-                                B.S. Computer Engineering · May 2026
-                            </p>
-                            <p style="font-size: 0.85rem; color: var(--muted)">
-                                Minor: Mathematics
-                            </p>
-                        </div>
-                    </div>
+      <div class="skill-group" style="margin-top:1.5rem;">
+        <h4>Currently</h4>
+        <div class="card">
+          <p style="font-size:.88rem;color:var(--muted);">Finishing my final semester at Penn State. Open to full-time roles starting June 2026.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                    <div class="skill-group">
-                        <h4>Interests</h4>
-                        <div class="tags">
-                            <span class="tag">Systems Programming</span>
-                            <span class="tag">Machine Learning</span>
-                            <span class="tag">Web Development</span>
-                            <span class="tag">Game Development</span>
-                            <span class="tag">Hardware / IoT</span>
-                            <span class="tag">Open Source</span>
-                        </div>
-                    </div>
+<footer>
+  &copy; 2026 Ethan Hershey &nbsp;·&nbsp; ethan.d.hershey@gmail.com
+</footer>
 
-                    <div class="skill-group" style="margin-top: 1.5rem">
-                        <h4>Currently</h4>
-                        <div class="card">
-                            <p style="font-size: 0.88rem; color: var(--muted)">
-                                Finishing my final semester at Penn State. Open
-                                to full-time roles starting June 2026.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            &copy; 2026 Ethan Hershey &nbsp;·&nbsp; ethan.d.hershey@gmail.com
-        </footer>
-    </body>
+</body>
 </html>

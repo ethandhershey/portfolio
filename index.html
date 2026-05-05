@@ -1,120 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ethan Hershey — Computer Engineer</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <nav>
-            <span class="nav-logo">ethan.hershey</span>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethan Hershey — Computer Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-        <div class="hero">
-            <p class="hero-tag">Computer Engineer</p>
-            <h1>Hi, I'm <span>Ethan Hershey</span>.</h1>
-            <p>
-                Computer Engineering student at Penn State, graduating May 2026.
-                I build software, train AI models, and work close to the
-                hardware.
-            </p>
-            <div class="btn-row">
-                <a href="work.html" class="btn btn-primary">View My Work</a>
-                <a href="resume.html" class="btn btn-outline">Resume</a>
-            </div>
-        </div>
+<nav>
+  <span class="nav-logo">ethan.hershey</span>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="writing.html">Writing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-        <section class="section">
-            <p class="section-label">Featured Projects</p>
-            <h2>Things I've Built</h2>
-            <div class="card-grid">
-                <div class="card">
-                    <p class="card-tag">Rust · React · AWS</p>
-                    <h3>Personal Website</h3>
-                    <p>
-                        Axum backend and React frontend on AWS EC2 with a CI/CD
-                        pipeline for automated deployment.
-                    </p>
-                </div>
+<div class="hero">
+  <p class="hero-tag">Computer Engineer</p>
+  <h1>Hi, I'm <span>Ethan Hershey</span>.</h1>
+  <p>Computer Engineering student at Penn State, graduating May 2026. I build software, train models, and work close to the hardware.</p>
+  <div class="btn-row">
+    <a href="resume.html" class="btn btn-primary">Resume</a>
+    <a href="writing.html" class="btn btn-outline">Writing Samples</a>
+  </div>
+</div>
 
-                <div class="card">
-                    <p class="card-tag">Python · NLP · Distributed</p>
-                    <h3>AI Movie Rating System</h3>
-                    <p>
-                        85% accuracy predicting movie ratings from review
-                        sentiment. Sub-200ms response time. Built at HackPSU in
-                        24 hours.
-                    </p>
-                </div>
+<section class="section">
+  <p class="section-label">Featured Projects</p>
+  <h2>Things I've Built</h2>
+  <div class="card-grid">
 
-                <div class="card">
-                    <p class="card-tag">Rust · Bevy</p>
-                    <h3>2D Platformer</h3>
-                    <p>
-                        Custom physics engine and procedural level generation
-                        built from scratch in Bevy.
-                    </p>
-                </div>
+    <div class="card">
+      <p class="card-tag">Rust · React · AWS</p>
+      <h3>Full-Stack Personal Website</h3>
+      <p>Axum backend and React frontend on AWS EC2 with a CI/CD pipeline for automated deployment on push.</p>
+    </div>
 
-                <div class="card">
-                    <p class="card-tag">Raspberry Pi · IoT</p>
-                    <h3>Smart Rain Water System</h3>
-                    <p>
-                        1st Place at North Museum Science Fair. Sensor network
-                        that cuts water waste using weather API integration.
-                    </p>
-                </div>
-            </div>
-        </section>
+    <div class="card">
+      <p class="card-tag">Python · NLP · Distributed</p>
+      <h3>AI Movie Rating System</h3>
+      <p>85% accuracy predicting movie ratings from review sentiment. Sub-200ms response time. Built at HackPSU in 24 hours.</p>
+    </div>
 
-        <section class="section">
-            <p class="section-label">Technical Skills</p>
-            <h2>What I Work With</h2>
+    <div class="card">
+      <p class="card-tag">Rust · Bevy</p>
+      <h3>2D Platformer</h3>
+      <p>Custom physics engine and procedural level generation built from scratch.</p>
+    </div>
 
-            <div class="skill-group">
-                <h4>Languages</h4>
-                <div class="tags">
-                    <span class="tag">Python</span><span class="tag">Rust</span
-                    ><span class="tag">Java</span>
-                    <span class="tag">C / C++</span><span class="tag">Go</span
-                    ><span class="tag">TypeScript</span>
-                    <span class="tag">SQL</span><span class="tag">MATLAB</span>
-                </div>
-            </div>
+    <div class="card">
+      <p class="card-tag">HTML · CSS</p>
+      <h3>GNU Website Redesign</h3>
+      <p>Front-end redesign of the GNU Project website. Modernized layout and navigation while keeping the original content.</p>
+      <a href="https://ethandhershey.github.io/gnu-website-redesign/" class="card-link" target="_blank">View live site &rarr;</a>
+    </div>
 
-            <div class="skill-group">
-                <h4>Web &amp; Cloud</h4>
-                <div class="tags">
-                    <span class="tag">React</span
-                    ><span class="tag">Node.js</span
-                    ><span class="tag">Axum</span> <span class="tag">AWS</span
-                    ><span class="tag">Docker</span
-                    ><span class="tag">Kubernetes</span>
-                </div>
-            </div>
+  </div>
+</section>
 
-            <div class="skill-group">
-                <h4>Machine Learning</h4>
-                <div class="tags">
-                    <span class="tag">PyTorch</span
-                    ><span class="tag">TensorFlow</span
-                    ><span class="tag">Hugging Face</span>
-                    <span class="tag">scikit-learn</span
-                    ><span class="tag">NLP</span>
-                </div>
-            </div>
-        </section>
+<section class="section">
+  <p class="section-label">Skills</p>
+  <h2>What I Work With</h2>
 
-        <footer>
-            &copy; 2026 Ethan Hershey &nbsp;·&nbsp; ethan.d.hershey@gmail.com
-        </footer>
-    </body>
+  <div class="skill-group">
+    <h4>Languages</h4>
+    <div class="tags">
+      <span class="tag">Python</span><span class="tag">Rust</span><span class="tag">Java</span>
+      <span class="tag">C / C++</span><span class="tag">Go</span><span class="tag">TypeScript</span>
+      <span class="tag">SQL</span><span class="tag">MATLAB</span>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <h4>Web &amp; Cloud</h4>
+    <div class="tags">
+      <span class="tag">React</span><span class="tag">Axum</span><span class="tag">Node.js</span>
+      <span class="tag">AWS</span><span class="tag">Docker</span><span class="tag">Kubernetes</span>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <h4>Machine Learning</h4>
+    <div class="tags">
+      <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">Hugging Face</span>
+      <span class="tag">scikit-learn</span><span class="tag">NLP</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Ethan Hershey &nbsp;·&nbsp; ethan.d.hershey@gmail.com
+</footer>
+
+</body>
 </html>

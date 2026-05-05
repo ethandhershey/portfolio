@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Directory Snapshot Tool — Ethan Hershey</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .readme-body { max-width: 860px; margin: 0 auto; padding: 0 2rem 4rem; }
+    .readme-body h2 { font-family: var(--font-head); font-size: 1.4rem; font-weight: 700; color: #fff; margin: 2rem 0 .8rem; }
+    .readme-body h3 { font-family: var(--font-head); font-size: 1.1rem; font-weight: 600; color: #fff; margin: 1.5rem 0 .6rem; }
+    .readme-body p { color: var(--muted); font-size: .93rem; line-height: 1.75; margin-bottom: .8rem; }
+    .readme-body ul { padding-left: 1.4rem; margin-bottom: 1rem; }
+    .readme-body li { color: var(--muted); font-size: .9rem; line-height: 1.7; margin-bottom: .25rem; }
+    .readme-body pre {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem 1.2rem;
+      overflow-x: auto;
+      margin-bottom: 1rem;
+    }
+    .readme-body code {
+      font-family: var(--font-mono);
+      font-size: .82rem;
+      color: var(--accent);
+    }
+    .readme-body pre code { color: var(--text); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">ethan.hershey</span>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="writing.html" class="active">Writing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <p class="hero-tag">Personal Project · Technical Documentation</p>
+  <h1>Directory Snapshot Tool</h1>
+</div>
+
+<section class="section">
+  <div class="writing-nav">
+    <a href="writing.html">All Samples</a>
+    <a href="writing-keyboard.html">Mechanical Keyboard</a>
+    <a href="writing-bowline.html">Bowline Knot</a>
+    <a href="writing-qaoa.html">QAOA Report</a>
+    <a href="writing-readme.html" class="active">README</a>
+  </div>
+
+  <div class="reflection-box">
+    <h4>Reflection</h4>
+    <p>This README documents a Python tool I built to generate structured snapshots of directories for LLM analysis. Writing good documentation for a personal project is easy to skip, but I wanted anyone landing on the repo to understand what it does and how to use it in under a minute. That meant organizing by use case, not by implementation, and including concrete examples for every flag. Good documentation is part of building good software. If someone has to read your source code to figure out how to use your tool, you have not finished the job. For an employer, this shows I think about the people who will use my code, not just the code itself.</p>
+  </div>
+</section>
+
+<div class="readme-body">
+
+  <h2>Overview</h2>
+  <p>The Directory Snapshot Tool is a Python script that generates a comprehensive snapshot of a directory's structure and file contents. It's particularly useful for capturing project structures and content for analysis by Large Language Models (LLMs) or for quick project overviews.</p>
+
+  <h2>Features</h2>
+  <ul>
+    <li>Captures directory structure and file contents in a single JSON file</li>
+    <li>Configurable file size limit for content inclusion</li>
+    <li>Ability to exclude file contents for large directories</li>
+    <li>Option to include or exclude the file structure in the output</li>
+    <li>Customizable ignore patterns for excluding files and directories</li>
+    <li>Automatic exclusion of binary files and handling of text encodings</li>
+    <li>Efficient processing of large directories</li>
+  </ul>
+
+  <h2>Installation</h2>
+  <ol style="padding-left:1.4rem;margin-bottom:1rem;">
+    <li style="color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:.25rem;">Ensure you have Python 3.6 or higher installed.</li>
+    <li style="color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:.25rem;">Clone this repository or download the <code>snapshot.py</code> script.</li>
+  </ol>
+  <p>No additional dependencies are required.</p>
+
+  <h2>Usage</h2>
+  <p>Basic usage:</p>
+  <pre><code>python snapshot.py</code></pre>
+  <p>This will create a snapshot of the current directory and save it as <code>directory_snapshot.json</code>.</p>
+
+  <h3>Command-line Options</h3>
+  <pre><code>usage: snapshot.py [-h] [-i INPUT] [-o OUTPUT] [--ignore IGNORE [IGNORE ...]]
+                   [--max-size MAX_SIZE] [--no-content] [--structure-only]
+                   [--no-structure]
+
+options:
+  -h, --help            show this help message and exit
+  -i INPUT              Input directory (default: current directory)
+  -o OUTPUT             Output JSON file name (default: directory_snapshot.json)
+  --ignore IGNORE       Patterns of files/folders to ignore (supports wildcards)
+  --max-size MAX_SIZE   Maximum file size to include content, in bytes (default: 1MB)
+  --no-content          Exclude file contents from the snapshot
+  --structure-only      Display only the file structure and exit
+  --no-structure        Exclude file structure from the snapshot</code></pre>
+
+  <h3>Examples</h3>
+  <pre><code># Snapshot a specific directory
+python snapshot.py -i /path/to/your/project
+
+# Custom output file name
+python snapshot.py -o project_snapshot.json
+
+# Ignore specific files or directories
+python snapshot.py --ignore "*.log" "temp_*" ".vscode"
+
+# Increase max file size for content inclusion (5MB)
+python snapshot.py --max-size 5242880
+
+# Generate a structure-only snapshot
+python snapshot.py --no-content
+
+# Display only the file structure without generating a snapshot
+python snapshot.py --structure-only
+
+# Generate a snapshot without the file structure
+python snapshot.py --no-structure</code></pre>
+
+  <h2>Output Format</h2>
+  <pre><code>{
+  "file_structure": "├── file1.txt\n├── directory1/\n│   └── file2.txt\n└── file3.txt",
+  "files": [
+    {
+      "path": "relative/path/to/file",
+      "content": "file contents (if included)"
+    }
+  ],
+  "errors": [
+    {
+      "path": "relative/path/to/problematic/file",
+      "error": "Error message"
+    }
+  ]
+}</code></pre>
+
+  <h2>Use Cases</h2>
+  <ul>
+    <li>Quickly capture project structure and contents for documentation</li>
+    <li>Prepare project snapshots for analysis by AI models or code review tools</li>
+    <li>Create lightweight backups of text-based projects</li>
+    <li>Generate overviews of directory contents for archival purposes</li>
+    <li>Analyze project structure separately from file contents</li>
+  </ul>
+
+</div>
+
+<footer>
+  &copy; 2026 Ethan Hershey &nbsp;·&nbsp; ethan.d.hershey@gmail.com
+</footer>
+
+</body>
+</html>
